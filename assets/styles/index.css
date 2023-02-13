@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "font1";
+  src: url(/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(/assets/fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: font3, sans-serif;
+  background: rgb(33, 32, 30);
+}
+
+span {
+  font-family: font1, sans-serif, sans-serif;
+  font-size: 1.8rem;
+  color: rgb(182, 99, 21);
+}
+
+.logo {
+  margin: 40px 0;
+}
+
+li {
+  list-style: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+li:hover {
+  color: rgb(182, 99, 21);
+  text-transform: uppercase;
+}
+
+.btn {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: rgb(182, 99, 21);
+}
+
+i {
+  cursor: pointer;
+}
+i:hover {
+  color: rgb(182, 99, 21);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  padding: 10px;
+  align-items: center;
+  text-align: right;
+  color: white;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav span {
+  font-weight: 600;
+  color: white;
+}
+
+header {
+  height: 100vh;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+}
+header .header_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  color: white;
+  transform: translateY(-12%);
+}
+header .header_content span {
+  font-size: 3rem;
+  margin: 0;
+}
+header .header_content h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: font2, sans-serif;
+  line-height: 0px;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  margin: 0;
+  line-height: 30px;
+}
+header .header_content img {
+  margin: 40px 0;
+}
+header .header_content p {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: white;
+}
+.section1 .part_right1 {
+  margin: 15px;
+  padding: 20px 10px;
+  border: dashed rgb(182, 99, 21) 1px;
+}
+.section1 .part_right1 h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: font2, sans-serif;
+  line-height: 0px;
+  letter-spacing: 1px;
+}
+.section1 .part_right1 img {
+  margin: 40px 0;
+}
+.section1 .part_right1 p {
+  line-height: 20px;
+}
+.section1 .part_right1 .logo1 img {
+  border-radius: 80px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+.section1 .part_right1 .logo1 h6 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: font2, sans-serif;
+  line-height: 0px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 20px;
+}
+.section1 .part_right1 .logo1 p {
+  color: rgb(207, 213, 218);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.section1 .part_left1 {
+  background: url(/assets/img/store-01.jpg) center/cover;
+}
+
+main {
+  background: url(/assets/img/bg-menu-01.jpg) center no-repeat;
+  background-position: bottom;
+  background-size: 100% 65%;
+  padding: 50px;
+  height: 1200px;
+}
+main .navbar {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  padding: 0 30px 30px 30px;
+}
+main .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+main .navbar ul li {
+  position: relative;
+  padding-bottom: 10px;
+}
+main .navbar ul li::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: rgb(207, 213, 218);
+  bottom: 0;
+}
+main .menu {
+  background: white;
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 30px 10px 10px 10px;
+}
+main .menu::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: rgb(182, 99, 21);
+  width: 100%;
+  top: 0;
+}
+main .menu .flex_menu {
+  border-bottom: dashed rgb(207, 213, 218) 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  justify-content: flex-start;
+}
+main .menu .flex_menu img {
+  border-radius: 50px;
+  width: 80px;
+}
+main .menu .flex_menu .price {
+  color: rgb(182, 99, 21);
+  font-weight: 900;
+}
+main .menu .flex_menu div {
+  text-align: left;
+  width: 80%;
+  padding: 0 25px 0 5px;
+}
+main .menu .flex_menu div h6 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 20px;
+}/*# sourceMappingURL=index.css.map */

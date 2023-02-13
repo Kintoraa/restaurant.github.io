@@ -1,0 +1,54 @@
+.section1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: $colorwhite;
+
+
+    .part_right1 {
+        margin: 15px;
+        padding: 20px 10px;
+        border: dashed $colororange 1px;
+        
+
+        h3 {
+            @include titled;
+        
+        }
+
+        img {
+            @include imgmargin;
+            
+        }
+
+        p {
+            line-height: 20px;
+    
+        }
+
+        .logo1 {
+            img {
+                border-radius: 80px;
+                width: 100px;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                @include titled;
+                text-transform: capitalize;
+                font-size: 0.9rem;
+                font-weight: 600;
+                line-height: 20px;
+            }
+
+            p {
+                color: $colorwhitetransparent;
+                text-transform: uppercase;          
+                font-size: 0.8rem;      
+            }
+        }
+    }
+
+    .part_left1 {
+        background: url(/assets/img/store-01.jpg) center/cover;
+    }
+}

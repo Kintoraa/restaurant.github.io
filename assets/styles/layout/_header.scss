@@ -1,0 +1,40 @@
+header {
+    height: 100vh;
+    background: url(/assets/img/bg-slider-06.jpg) center/cover;
+
+     .header_content{
+     @include center;
+     flex-direction: column;
+     min-height: 100vh;
+     color: $colorwhite;
+     transform: translateY(-12%);
+     
+    
+
+
+    span {
+        font-size: 3rem;
+        margin: 0;
+       
+    }
+
+     h1 {
+        @include titled;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        margin: 0;
+        line-height: 30px;
+       
+     }
+
+     img {
+      @include imgmargin;
+   }
+
+     p {
+       @include text; 
+     }
+  
+    }
+
+  }

@@ -1,0 +1,22 @@
+nav {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    padding: 10px;
+    align-items:center;
+    text-align: right;
+    color: $colorwhite;
+
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    span {
+        font-weight: 600;
+        color: $colorwhite;
+    }
+
+   
+
+}

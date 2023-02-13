@@ -5,38 +5,40 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./assets/styles/index.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav_left">
-            <h5>Resto</h5>
-        </div>
-        <div class="nav_center">
-            <ul>
-                <li>Home</li>
-                <li>Reservations</li>
-                <li>Menu</li>
-                <li>Blog</li>
-                <li>Pages</li>
-                <li>Shop</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="nav_right">
-            <ul>
-                <li><i class="fa-brands fa-facebook-f"></i></li>
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-            </ul>
-        </div>
-    </nav>
-
     <header>
-        <div>
+
+        <nav>
+            <div class="nav_left">
+                <span>Resto</span>
+            </div>
+            <div class="nav_center">
+                <ul>
+                    <li>Home</li>
+                    <li>Reservations</li>
+                    <li>Menu</li>
+                    <li>Blog</li>
+                    <li>Pages</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="header_content">
             <span>Welcome to</span>
             <h1>The resto</h1>
             <img src="./assets/img/ic-plate-big.png" alt="Un icon de couteau et de cuillère">
@@ -49,10 +51,10 @@
             <span>Discover</span>
             <h3>Our store</h3>
             <img src="./assets/img/ic-plate.png" alt="Un icon de couteau et de cuillère">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quae, sed facere eos dolor porro,
-                architecto blanditiis fugit incidunt soluta amet iste nesciunt aperiam temporibus eum iure sunt, nisi
-                sapiente.</p>
-            <div class="logo1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem eius odio laboriosam, sed cupiditate
+                repellat, eos numquam, qui aliquam alias reprehenderit. Aspernatur velit voluptates aut qui nemo hic
+                praesentium porro possimus eaque non labore voluptatum dolore </p>
+            <div class="logo">
                 <img src="./assets/img/avatar-01.jpg" alt="Chef cook ">
                 <h6>Russel Stephens</h6>
                 <p>Chef Cook</p>
@@ -63,66 +65,91 @@
 
     <main class="main">
         <span>Discover</span>
-        <img src="./assets/img/ic-plate.png" alt="Un icon de couteau et de cuillère">
+        <div class="logo"><img src="./assets/img/ic-plate.png" alt="Un icon de couteau et de cuillère"></div>
         <div class="navbar">
             <ul>
                 <li>Breakfast</li>
                 <li>Lunch</li>
                 <li>Dinner</li>
-                <li>Other</li>
                 <li>Drinks</li>
+                <li>Other</li>
+
             </ul>
         </div>
         <div class="menu">
 
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-01.jpg" alt="pate italienne">
-                <h6>Italian source mushroom</h6>
-                <p>Mushroom / Garlic / Veggies </p>
-                <p>$12</p>
+                <div>
+                    <h6>Italian source mushroom</h6>
+                    <p>Mushroom / Garlic / Veggies </p>
+                </div>
+
+                <p class="price">$12</p>
             </div>
 
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-02.jpg" alt="salade avec tomate et frite">
-                <h6>Tenu roast source</h6>
-                <p>Tuna / Potatoes / Rice</p>
-                <p>$15</p>
+                <div>
+                    <h6>Tenu roast source</h6>
+                    <p>Tuna / Potatoes / Rice</p>
+                </div>
+
+                <p class="price">$15</p>
             </div>
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-03.jpg" alt="Salted fried Chicken">
-                <h6>Salted Fried Chicken</h6>
-                <p>Chicken / Olive Oil / Salt</p>
-                <p>$20</p>
+                <div>
+                    <h6>Salted Fried Chicken</h6>
+                    <p>Chicken / Olive Oil / Salt</p>
+                </div>
+
+                <p class="price">$20</p>
             </div>
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-04.jpg" alt="Imported slamon steak">
-                <h6>Imported Slamon Steak</h6>
-                <p>Salmon / Veggies / Oil</p>
-                <p>$16</p>
+                <div>
+                    <h6>Imported Slamon Steak</h6>
+                    <p>Salmon / Veggies / Oil</p>
+                </div>
+
+                <p class="price">$16</p>
             </div>
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-05.jpg" alt="Fried potatoes With Garlic">
-                <h6>Fried potatoes With Garlic</h6>
-                <p>Potatoes / Olive oil / Garlic</p>
-                <p>$22</p>
+                <div>
+                    <h6>Fried potatoes With Garlic</h6>
+                    <p>Potatoes / Olive oil / Garlic</p>
+                </div>
+
+                <p class="price">$22</p>
             </div>
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-06.jpg" alt="Roast Pork">
-                <h6>Roast Pork (4 Sticks) </h6>
-                <p>Pork / Veggies / Shoyu</p>
-                <p>$18</p>
+                <div>
+                    <h6>Roast Pork (4 Sticks) </h6>
+                    <p>Pork / Veggies / Shoyu</p>
+                </div>
+
+                <p class="price">$18</p>
             </div>
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-07.jpg" alt="Crab With Curry">
-                <h6>Crab With Curry Sources</h6>
-                <p>Crab / Potatoes / Rice</p>
+                <div>
+                    <h6>Crab With Curry Sources</h6>
+                    <p>Crab / Potatoes / Rice</p>
+                </div>
+
                 <p>$14</p>
             </div>
-            <div>
+            <div class="flex_menu">
                 <img src="./assets/img/dish-item-08.jpg" alt="Baked Potato Pizza">
-                <h6>Baked Potato Pizza</h6>
-                <p>Potato / Bread / Cheese</p>
-                <p>$25</p>
+                <div>
+                    <h6>Baked Potato Pizza</h6>
+                    <p>Potato / Bread / Cheese</p>
+                </div>
+
+                <p class="price">$25</p>
             </div>
         </div>
     </main>
@@ -171,7 +198,7 @@
                         </div>
                         <div>
                             <label for="phone"></label>
-                            <input type="number" value="Phone" id="phone">
+                            <input type="text" value="Phone" id="phone">
                         </div>
 
                         <div>
