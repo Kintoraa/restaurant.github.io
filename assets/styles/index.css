@@ -79,7 +79,7 @@ nav span {
 
 header {
   height: 100vh;
-  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  background: url(../img/bg-slider-06.jpg) center/cover;
 }
 header .header_content {
   display: flex;
@@ -158,11 +158,11 @@ header .header_content p {
   font-size: 0.8rem;
 }
 .section1 .part_left1 {
-  background: url(/assets/img/store-01.jpg) center/cover;
+  background: url(../img/store-01.jpg) center/cover;
 }
 
 main {
-  background: url(/assets/img/bg-menu-01.jpg) center no-repeat;
+  background: url(../img/bg-menu-01.jpg) center no-repeat;
   background-position: bottom;
   background-size: 100% 65%;
   padding: 50px;
