@@ -73,13 +73,17 @@ li{
     list-style: none;
     transition: 0.5s;
     cursor: pointer;
-
+    
     &:hover {
         color: $colororange;
         text-transform: uppercase;
         
     }
 } 
+
+select, input {
+ cursor: pointer;
+}
 
 .btn {
     border: none;

@@ -1,0 +1,113 @@
+.section2_container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px ;
+
+    .part_right2 {
+        background: black;
+        padding: 20px;
+        
+
+        div {
+            border: dashed 1px $colorgrey;  
+            padding: 20px 0;
+
+
+            img {
+                @include imgmargin;
+            }
+
+        h4 {
+            @include titled;
+            color: $colorwhite;
+        }
+
+        h6 {
+            color: $colororange;
+            font-size: 1.1rem;
+        }
+
+        p {
+            color: $colorwhitetransparent;
+            margin: 20px auto;
+            font-size: 0.7rem;
+        }
+
+    }
+        
+    }
+
+    .part_left2 {
+        background: $colorwhite;
+        padding: 50px 80px;
+
+
+        span {
+            font-size: 2.2rem;
+        }
+
+        h4 {
+            @include titled;
+            font-size: 1.5rem;
+        
+            
+        }
+
+        img {
+            @include imgmargin;
+        }
+
+        .form_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+           padding-bottom: 30px;
+            
+
+            input, select {
+                width: 100%;
+                border: transparent 1px;
+                background: none;
+                margin-bottom: 10px;
+                outline: none;             
+            }
+
+            input::placeholder {
+            
+                &:focus {
+                    color: black;
+                    border: solid 5px red;
+                }
+            }
+
+            div {
+                border-bottom: solid 1px $colorwhitetransparent;
+
+                &:hover {
+                    border-bottom: solid 1px $colororange;
+                }
+            }
+        }
+
+        input[type=submit] {
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            color: $colorwhite;
+            background: $colorgrey;
+            letter-spacing: 4px;
+            font-weight: 900;
+            font-size: 0.7rem;
+            transition: 1s;
+
+            &:hover {
+                color: $colororange;
+            }
+        }
+    }
+
+
+}

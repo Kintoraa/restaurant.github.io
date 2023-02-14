@@ -1,0 +1,146 @@
+.section3 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    letter-spacing: 1px;
+        h3 {
+       @include titled;
+       color: $colorwhite; 
+       font-size: 1.8rem;
+       line-height: 20px;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+
+    button {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+
+    img {
+        @include imgmargin;
+    }
+
+    .section3_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "a1 a3"
+        "a2 a3";
+        gap: 15px;
+
+        .part_up {
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+         .container_left,.container_left2 {
+           
+            position: relative
+        }
+
+        .container_left {
+            background: url(/assets/img/event-01.jpg) center/cover;
+        }
+
+        .container_left2 {
+            background: url(/assets/img/event-02.jpg) center/cover;
+        }
+
+
+    }
+
+    .date_left {
+        position: absolute;
+        top: 50%; left: 50%;
+        padding: 10px 20px;
+        transform: translate(-50%, -50%);
+        background: $colorgrey;
+         color: $colorwhite;
+
+         h6 {
+            font-size: 1.2rem;
+         }
+
+         p {
+            font-size: 0.8rem;
+         }
+    }
+
+
+    .part_left {
+        background: $colorwhite;
+        padding: 20px;
+        text-align: left;
+        letter-spacing: 1px;
+
+       
+
+        p {
+            margin: 15px 0;
+            color: $colorwhitetransparent;
+            font-size: 0.7rem;
+        }
+
+       
+    }
+
+        .part_right3 {
+            grid-area: a3;
+            background: url(/assets/img/event-03.jpg) center/cover;
+            padding: 20px;
+
+            .part_right3_container{
+                @include center;
+                flex-direction: column;
+                position: relative;
+                background: $colorwhite;
+                padding: 10px;
+                height: 100%;
+        
+
+            .date_right  {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translatex(-50%);
+                padding: 10px 20px;
+                background: $colorgrey;
+                color: $colorwhite;
+
+         h6 {
+            font-size: 1.2rem;
+         }
+
+         p {
+            margin: 0;
+            font-size: 0.8rem;
+         }
+            }
+
+            p {
+                margin: 15px 0;
+                color: $colorwhitetransparent;
+                font-size: 0.7rem;
+            }
+
+            .btn {
+                position: absolute;
+                bottom: 15%;
+            }
+        
+            
+        }
+
+
+          
+
+        }
+
+    
+    }
+}
