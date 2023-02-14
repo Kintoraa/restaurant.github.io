@@ -382,10 +382,10 @@ main .menu .flex_menu div h6 {
   position: relative;
 }
 .section3 .section3_container .part_up .container_left {
-  background: url(/assets/img/event-01.jpg) center/cover;
+  background: url(../img/event-01.jpg) center/cover;
 }
 .section3 .section3_container .part_up .container_left2 {
-  background: url(/assets/img/event-02.jpg) center/cover;
+  background: url(../img/event-02.jpg) center/cover;
 }
 .section3 .section3_container .date_left {
   position: absolute;
@@ -415,7 +415,7 @@ main .menu .flex_menu div h6 {
 }
 .section3 .section3_container .part_right3 {
   grid-area: a3;
-  background: url(/assets/img/event-03.jpg) center/cover;
+  background: url(../img/event-03.jpg) center/cover;
   padding: 20px;
 }
 .section3 .section3_container .part_right3 .part_right3_container {
@@ -456,7 +456,7 @@ main .menu .flex_menu div h6 {
 
 .section4 {
   min-height: 600px;
-  background: url(/assets/img/gmap.jpg) center/cover no-repeat;
+  background: url(../img/gmap.jpg) center/cover no-repeat;
   background-size: 100% 60%;
   background-position: bottom;
   margin: 0 auto;
